@@ -1,0 +1,63 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --font-placard: "Placard Next Compressed";
+  --font-bluscreens: "TT Bluescreens";
+  --acid: #cbd91c;
+  --gold: #ffd200;
+  --asphalt: #192726;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: var(--asphalt);
+  color: #f7f7ef;
+  font-family: var(--font-bluscreens), Arial, sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+::selection {
+  background: var(--gold);
+  color: var(--asphalt);
+}
+
+.race-title {
+  font-family: var(--font-placard), Impact, "Arial Narrow", sans-serif;
+  font-stretch: condensed;
+  letter-spacing: 0;
+  text-transform: uppercase;
+}
+
+.speed-lines {
+  background-image:
+    linear-gradient(115deg, transparent 0 14%, rgba(255, 210, 0, 0.92) 14% 16%, transparent 16% 31%, rgba(203, 217, 28, 0.8) 31% 33%, transparent 33%),
+    repeating-linear-gradient(115deg, rgba(255, 255, 255, 0.08) 0 1px, transparent 1px 28px);
+}
+
+.checkered {
+  background-image:
+    linear-gradient(45deg, rgba(255, 255, 255, 0.08) 25%, transparent 25%),
+    linear-gradient(-45deg, rgba(255, 255, 255, 0.08) 25%, transparent 25%),
+    linear-gradient(45deg, transparent 75%, rgba(255, 255, 255, 0.08) 75%),
+    linear-gradient(-45deg, transparent 75%, rgba(255, 255, 255, 0.08) 75%);
+  background-position:
+    0 0,
+    0 18px,
+    18px -18px,
+    -18px 0;
+  background-size: 36px 36px;
+}
