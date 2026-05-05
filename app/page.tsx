@@ -104,7 +104,7 @@ export default function Home() {
               Antes da próxima página
             </p>
             <h2 className="race-title mt-3 text-6xl leading-none sm:text-7xl">
-              Aqueca.
+              Aqueça.
               <span className="block text-[#7f8a09]">Escolha.</span>
               <span className="block">Corra.</span>
             </h2>
