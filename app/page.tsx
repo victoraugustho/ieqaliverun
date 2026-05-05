@@ -68,6 +68,13 @@ export default function Home() {
               >
                 Ver detalhes
               </a>
+              <a
+                href="/assets/regulamento-oficial.pdf"
+                download
+                className="inline-flex min-h-14 items-center justify-center border border-acid px-8 py-4 text-base font-black uppercase text-acid transition hover:border-gold hover:text-gold"
+              >
+                Baixar regulamento
+              </a>
             </div>
           </div>
 
@@ -165,6 +172,13 @@ export default function Home() {
             className="inline-flex min-h-14 shrink-0 items-center justify-center bg-asphalt px-8 py-4 text-base font-black uppercase text-white transition hover:-translate-y-0.5 hover:bg-[#0f1716]"
           >
             Ir para inscrição
+          </a>
+          <a
+            href="/assets/regulamento-oficial.pdf"
+            download
+            className="inline-flex min-h-14 shrink-0 items-center justify-center border-2 border-asphalt px-8 py-4 text-base font-black uppercase text-asphalt transition hover:-translate-y-0.5 hover:bg-asphalt hover:text-white"
+          >
+            Baixar regulamento
           </a>
         </div>
       </section>
