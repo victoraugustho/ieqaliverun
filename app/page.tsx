@@ -2,8 +2,8 @@ import Image from "next/image";
 
 const details = [
   { label: "Percurso", value: "5K + caminhada" },
-  { label: "Largada", value: "07h00" },
-  { label: "Local", value: "IEQ Anápolis" },
+  { label: "Largada", value: "06h30" },
+  { label: "Local", value: "Unievangélica" },
 ];
 
 const highlights = [
@@ -57,7 +57,7 @@ export default function Home() {
             </p>
             <div className="mt-8 flex flex-col gap-3 sm:flex-row">
               <a
-                href="/inscricao"
+                href="https://inchur.ch/lNivj"
                 className="inline-flex min-h-14 items-center justify-center bg-acid px-8 py-4 text-base font-black uppercase text-asphalt transition hover:-translate-y-0.5 hover:bg-gold hover:shadow-race-glow"
               >
                 Quero minha vaga
@@ -67,13 +67,6 @@ export default function Home() {
                 className="inline-flex min-h-14 items-center justify-center border border-white/35 px-8 py-4 text-base font-black uppercase text-white transition hover:border-gold hover:text-gold"
               >
                 Ver detalhes
-              </a>
-              <a
-                href="/assets/regulamento-oficial.pdf"
-                download
-                className="inline-flex min-h-14 items-center justify-center border border-acid px-8 py-4 text-base font-black uppercase text-acid transition hover:border-gold hover:text-gold"
-              >
-                Baixar regulamento
               </a>
             </div>
           </div>
@@ -168,7 +161,7 @@ export default function Home() {
             </h2>
           </div>
           <a
-            href="/inscricao"
+            href="https://inchur.ch/lNivj"
             className="inline-flex min-h-14 shrink-0 items-center justify-center bg-asphalt px-8 py-4 text-base font-black uppercase text-white transition hover:-translate-y-0.5 hover:bg-[#0f1716]"
           >
             Ir para inscrição
