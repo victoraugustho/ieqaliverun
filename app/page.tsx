@@ -2,17 +2,16 @@ import Image from "next/image";
 
 const details = [
   { label: "Data", value: "14/06/2026" },
-  { label: "Horário", value: "06h30 às 09h00" },
+  { label: "Largada", value: "06h30" },
   { label: "Percurso", value: "5 km" },
-  { label: "Local", value: "Rua Benjamin Constant, 786 - Centro, Anápolis - GO" },
   { label: "Inscrições até", value: "03/06/2026 às 18h" },
-  { label: "Confirmação", value: "2 kg de alimento no dia do evento" },
+  { label: "Retirada do kit", value: "Entregar 2 kg de alimento" },
 ];
 
 const highlights = [
   "Corrida de rua acessível para iniciantes e corredores experientes",
   "Percurso de 5 km com desafio equilibrado entre resistência e velocidade",
-  "Participação confirmada mediante entrega de 2 kg de alimento",
+  "Entrega de 2 kg de alimento na retirada do kit",
   "Propósito de impactar 400 famílias pelo projeto Mercado do Amor",
 ];
 
@@ -60,9 +59,11 @@ export default function Home() {
               <span className="border border-gold bg-gold px-4 py-2 text-sm font-black uppercase text-asphalt">
                 14/06/2026
               </span>
+
               <span className="border border-white/25 bg-white/10 px-4 py-2 text-sm font-black uppercase text-white">
-                06h30 às 09h00
+                06h30
               </span>
+
               <span className="border border-acid bg-acid px-4 py-2 text-sm font-black uppercase text-asphalt">
                 5 km
               </span>
@@ -188,69 +189,57 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="bg-[#f6f6ed] px-5 py-16 text-asphalt sm:px-8 lg:px-12">
+      <section className="bg-asphalt px-5 py-14 text-white sm:px-8 lg:px-12">
         <div className="mx-auto max-w-7xl">
-          <p className="text-sm font-black uppercase text-asphalt/60">
-            Endereço
+          <p className="text-sm font-black uppercase text-acid">
+            Acompanhe nas redes sociais
           </p>
 
-          <h2 className="race-title mt-3 text-4xl leading-none sm:text-6xl">
-            Rua Benjamin Constant, 786
+          <h2 className="race-title mt-3 text-5xl leading-none sm:text-7xl">
+            Fique por dentro da IEQ Alive Run.
           </h2>
 
-          <p className="mt-4 max-w-3xl text-lg font-bold leading-8 text-asphalt/75">
-            Centro, Anápolis - GO, 75043-010 - Brasil.
-          </p>
+          <div className="mt-8 grid gap-4 sm:grid-cols-2">
+            <a
+              href="https://www.instagram.com/aliveanapolis?igsh=c2YwMmJhbDFtaTQx"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group border border-white/15 bg-white/[0.04] p-6 transition hover:-translate-y-1 hover:border-gold hover:bg-white/[0.08]"
+            >
+              <p className="text-xs font-black uppercase text-white/50">
+                Instagram
+              </p>
+
+              <p className="race-title mt-3 text-4xl leading-none text-gold">
+                @aliveanapolis
+              </p>
+
+              <p className="mt-4 text-sm font-bold uppercase text-white/70 group-hover:text-acid">
+                Acessar perfil →
+              </p>
+            </a>
+
+            <a
+              href="https://www.instagram.com/ieqanapolis?igsh=cnh1MTBsb3M1a3Vh"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group border border-white/15 bg-white/[0.04] p-6 transition hover:-translate-y-1 hover:border-gold hover:bg-white/[0.08]"
+            >
+              <p className="text-xs font-black uppercase text-white/50">
+                Instagram
+              </p>
+
+              <p className="race-title mt-3 text-4xl leading-none text-gold">
+                @ieqanapolis
+              </p>
+
+              <p className="mt-4 text-sm font-bold uppercase text-white/70 group-hover:text-acid">
+                Acessar perfil →
+              </p>
+            </a>
+          </div>
         </div>
       </section>
-
-      <section className="bg-asphalt px-5 py-14 text-white sm:px-8 lg:px-12">
-  <div className="mx-auto max-w-7xl">
-    <p className="text-sm font-black uppercase text-acid">
-      Acompanhe nas redes sociais
-    </p>
-
-    <h2 className="race-title mt-3 text-5xl leading-none sm:text-7xl">
-      Fique por dentro da IEQ Alive Run.
-    </h2>
-
-    <div className="mt-8 grid gap-4 sm:grid-cols-2">
-      <a
-        href="https://www.instagram.com/aliveanapolis?igsh=c2YwMmJhbDFtaTQx"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="group border border-white/15 bg-white/[0.04] p-6 transition hover:-translate-y-1 hover:border-gold hover:bg-white/[0.08]"
-      >
-        <p className="text-xs font-black uppercase text-white/50">
-          Instagram
-        </p>
-        <p className="race-title mt-3 text-4xl leading-none text-gold">
-          @aliveanapolis
-        </p>
-        <p className="mt-4 text-sm font-bold uppercase text-white/70 group-hover:text-acid">
-          Acessar perfil →
-        </p>
-      </a>
-
-      <a
-        href="https://www.instagram.com/ieqanapolis?igsh=cnh1MTBsb3M1a3Vh"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="group border border-white/15 bg-white/[0.04] p-6 transition hover:-translate-y-1 hover:border-gold hover:bg-white/[0.08]"
-      >
-        <p className="text-xs font-black uppercase text-white/50">
-          Instagram
-        </p>
-        <p className="race-title mt-3 text-4xl leading-none text-gold">
-          @ieqanapolis
-        </p>
-        <p className="mt-4 text-sm font-bold uppercase text-white/70 group-hover:text-acid">
-          Acessar perfil →
-        </p>
-      </a>
-    </div>
-  </div>
-</section>
 
       <section className="bg-gold px-5 py-12 text-asphalt sm:px-8 lg:px-12">
         <div className="mx-auto flex max-w-7xl flex-col items-start justify-between gap-6 lg:flex-row lg:items-center">
