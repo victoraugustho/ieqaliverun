@@ -31,20 +31,18 @@ export default function Home() {
             priority
             className="h-16 w-16 rounded-full bg-white object-contain p-2 sm:h-20 sm:w-20"
           />
-          <a
-            href="/inscricao"
-            className="group inline-flex min-h-12 items-center justify-center border-2 border-gold bg-gold px-5 py-3 text-sm font-black uppercase text-asphalt transition hover:-translate-y-0.5 hover:bg-acid hover:shadow-race-glow sm:px-7"
-            aria-label="Ir para a próxima página de inscrição"
+          <span
+            className="inline-flex min-h-12 cursor-not-allowed items-center justify-center border-2 border-white/30 bg-white/10 px-5 py-3 text-sm font-black uppercase text-white/65 sm:px-7"
+            aria-disabled="true"
           >
-            Inscrever agora
-            <span className="ml-3 transition group-hover:translate-x-1">→</span>
-          </a>
+            Esgotado
+          </span>
         </header>
 
         <div className="relative z-10 mx-auto grid min-h-[76vh] max-w-7xl items-center gap-10 pt-12 lg:grid-cols-[1.08fr_0.92fr] lg:pt-8">
           <div>
             <p className="mb-4 inline-flex border border-acid bg-asphalt/75 px-4 py-2 text-xs font-black uppercase text-acid sm:text-sm">
-              Corrida oficial de inscrição aberta
+              Inscrições finalizadas
             </p>
             <h1 className="race-title max-w-4xl text-[4.6rem] leading-[0.82] text-white sm:text-[7rem] lg:text-[9.5rem]">
               IEQ
@@ -56,12 +54,12 @@ export default function Home() {
               linha de chegada com a família Alive.
             </p>
             <div className="mt-8 flex flex-col gap-3 sm:flex-row">
-              <a
-                href="/inscricao"
-                className="inline-flex min-h-14 items-center justify-center bg-acid px-8 py-4 text-base font-black uppercase text-asphalt transition hover:-translate-y-0.5 hover:bg-gold hover:shadow-race-glow"
+              <span
+                className="inline-flex min-h-14 cursor-not-allowed items-center justify-center bg-white/10 px-8 py-4 text-base font-black uppercase text-white/60 ring-1 ring-white/20"
+                aria-disabled="true"
               >
-                Quero minha vaga
-              </a>
+                Esgotado
+              </span>
               <a
                 href="#informacoes"
                 className="inline-flex min-h-14 items-center justify-center border border-white/35 px-8 py-4 text-base font-black uppercase text-white transition hover:border-gold hover:text-gold"
@@ -162,17 +160,17 @@ export default function Home() {
       <section className="bg-gold px-5 py-12 text-asphalt sm:px-8 lg:px-12">
         <div className="mx-auto flex max-w-7xl flex-col items-start justify-between gap-6 sm:flex-row sm:items-center">
           <div>
-            <p className="text-sm font-black uppercase">Próxima etapa</p>
+            <p className="text-sm font-black uppercase">Inscrições encerradas</p>
             <h2 className="race-title text-5xl leading-none sm:text-7xl">
-              Garanta sua vaga na página de inscrição.
+              As inscrições foram finalizadas.
             </h2>
           </div>
-          <a
-            href="/inscricao"
-            className="inline-flex min-h-14 shrink-0 items-center justify-center bg-asphalt px-8 py-4 text-base font-black uppercase text-white transition hover:-translate-y-0.5 hover:bg-[#0f1716]"
+          <span
+            className="inline-flex min-h-14 shrink-0 cursor-not-allowed items-center justify-center bg-asphalt/70 px-8 py-4 text-base font-black uppercase text-white/65"
+            aria-disabled="true"
           >
-            Ir para inscrição
-          </a>
+            Esgotado
+          </span>
           <a
             href="/assets/regulamento-oficial.pdf"
             download
